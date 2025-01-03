@@ -380,7 +380,8 @@ button {
   padding: 0.5em 1em;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     background-color: var(--clr-primary-light-1);
     border: 1px solid var(--clr-accent);
     color: var(--clr-accent);
@@ -562,7 +563,8 @@ button {
             padding: 1em 1.5em;
             display: flex;
 
-            &:hover {
+            &:hover, 
+            &:focus-visible {
               background-color: var(--clr-accent);
               text-decoration: none;
             }
