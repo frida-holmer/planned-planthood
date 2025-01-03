@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,310 +10,449 @@
   <body>
     <!-- Header -->
     <header>
-      <img src="Assets/images/logo.svg" alt="Planned Planthood logo" />
-      Planned Planthood
+      <section class="header max-width-container">
+        <div class="header-flex max-width">
+          <section class="logo">
+            <svg class="logo-green" width="214" height="210" viewBox="0 0 214 210" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none">
+                <path d="M116.833 193.533C117.406 192.909 117.969 192.279 118.522 191.645L168.173 160.226C206.289 136.107 217.36 86.0907 192.816 48.5247C189.153 42.9185 181.619 41.3343 175.976 44.905L125.764 76.6782C121.37 70.1605 116.086 64.0725 109.92 58.5872L52.4904 7.49831C46.8526 2.48295 38.1677 2.90777 33.061 8.46735C-2.89261 47.6094 0.211903 108.041 39.9737 143.413L97.4031 194.502C103.041 199.517 111.726 199.092 116.833 193.533Z" />
+                <path d="M115.122 194.336C115.527 193.897 115.927 193.455 116.319 193.009L153.69 169.521C182.93 151.143 191.451 112.997 172.598 84.3362C169.529 79.6722 163.25 78.3762 158.555 81.3272L121.425 104.664C118.17 100 114.303 95.6362 109.83 91.6843L66.4654 53.3677C61.8146 49.2582 54.6598 49.6021 50.4409 54.1641C22.9065 83.9378 25.2893 129.917 55.732 156.816L99.097 195.132C103.748 199.242 110.903 198.898 115.122 194.336Z" />
+              </g>
+            </svg>
+            <div class="logo-text">
+              <p>Planned</p>
+              <p>Planthood</p>
+            </div>
+          </section>
 
-      <nav>
-        <ul>
-          <li><a href="#">Hem</a></li>
-          <li><a href="#">Historik</a></li>
-          <li><a href="#">Tips</a></li>
-          <li><a href="#">Kontakt</a></li>
-        </ul>
-      </nav>
+          <nav class="header-nav-hamburger">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 24.5H26.5M5.5 16.5H26.5M5.5 8.5H26.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </nav>
 
-      <h1>Uppskattade växter</h1>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, corporis ipsum.</p>
+          <nav class="header-nav">
+            <ul>
+              <li><a href="#">Hem</a></li>
+              <li><a href="#">Historik</a></li>
+              <li><a href="#">Tips</a></li>
+              <li><a href="#">Kontakt</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
     </header>
 
     <!-- Main -->
     <main>
-      <section>
-        <h2>Anmäl dig till vårt nyhetsbrev så du inte missar en utsådd!</h2>
+      <!-- First section -->
+      <section class="section-1 max-width-container">
+        <div class="section-grid max-width">
+          <h1>Uppskattade växter</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, corporis ipsum.</p>
+        
+          <section class="gallery-grid">
+            <img class="gallery-img" src="https://picsum.photos/id/130/300/250" alt="Blomma">
+            <img class="gallery-img" src="https://picsum.photos/id/131/300/250" alt="Blomma">
+            <img class="gallery-img" src="https://picsum.photos/id/132/300/250" alt="Blomma">
+            <img class="gallery-img" src="https://picsum.photos/id/133/300/250" alt="Blomma">
+            <img class="gallery-img" src="https://picsum.photos/id/134/300/250" alt="Blomma">
+            <img class="gallery-img" src="https://picsum.photos/id/135/300/250" alt="Blomma">
+          </section>
+        </div>
+      </section>
+      
+      <!-- Second section -->
+      <section class="section-2 max-width-container section-bg">
+        <div class="section-flex flex-reverse max-width">
+          <div class="icon-bg">
+            <img src="Assets/images/icon-planting.svg" alt="Plantera">
+          </div>
+          <form>
+            <fieldset>
+              <legend>Anmäl dig till vårt nyhetsbrev så du inte missar en utsådd!</legend>
+              <div class="form-flex">
+                <input type="text" placeholder="email@domain.com" autocomplete="email" required>
+                <button class="submit-button" type=“submit”>Skicka</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
       </section>
 
-      <section>
-        <!-- Article 1 -->
-        <article class="article-1">
-          <header>
-            <img src="https://picsum.photos/id/107/200/300" alt="Gurka">
-            Blommor
-            Ätbart
-            Grönska
-          </header>
+      <!-- Third section -->
+      <section class="plant-list max-width-container">
+        <div class="section-grid max-width">
+          <!-- Article 1 -->
+          <article class="plant-card">
+            <header>
+              <img class="plant-img" src="https://picsum.photos/id/130/250/180" alt="Gurka">
+              <img class="plant-icon" src="Assets/images/icon-seedling.svg" alt="Plantera">
+            </header>
 
-          <main>
+            <section class="tags">
+              <p class="tag-flower">Blommor</p>
+              <p class="tag-edible">Ätbart</p>
+              <p class="tag-green">Grönska</p>
+            </section>
+
             <h3>Gurka</h3>
             <p>Gurka växer snabbt, är enkel att odla och ger mängder med gurkor, bara man är noga med vattning, omplantering, duschning och gödsling.</p>
-          </main>
 
-          <footer>
-            <img src="Assets/images/26.png" alt="Coolio avatar">
-            Coolio
-            2024-04-01
-          </footer>
-        </article>
+            <footer>
+              <img class="avatar-img" src="Assets/images/26.png" alt="Coolio avatar">
+              <div class="avatar-text">
+                <p><a href="#">Coolio</a></p>
+                <p>2024-04-01</p>
+              </div>
+            </footer>
+          </article>
 
-        <!-- Article 2 -->
-        <article class="article-2">
-          <header>
-            <img src="https://picsum.photos/id/107/200/300" alt="Tomat">
-            Solälskande
-            Lättodlat
-            Ätbart
-          </header>
+          <!-- Article 2 -->
+          <article class="plant-card">
+            <header>
+              <img class="plant-img" src="https://picsum.photos/id/130/250/180" alt="Tomat">
+              <img class="plant-icon" src="Assets/images/icon-seedling.svg" alt="Plantera">
+            </header>
 
-          <main>
+            <section class="tags">
+              <p class="tag-sunloving">Solälskande</p>
+              <p class="tag-easy">Lättodlat</p>
+              <p class="tag-edible">Ätbart</p>
+            </section>
+
             <h3>Tomat</h3>
             <p>En perfekt grönsak att odla på balkongen eller i trädgården. Ger riklig skörd under sommaren.</p>
-          </main>
 
-          <footer>
-            <img src="Assets/images/82.png" alt="Anna Odlare avatar">
-            Anna Odlare
-            2024-12-05
-          </footer>
-        </article>
+            <footer>
+              <img class="avatar-img" src="Assets/images/82.png" alt="Anna Odlare avatar">
+              <div class="avatar-text">
+                <p><a href="#">Anna Odlare</a></p>
+                <p>2024-12-05</p>
+              </div>
+            </footer>
+          </article>
 
-        <!-- Article 3 -->
-        <article class="article-3">
-          <header>
-            <img src="https://picsum.photos/id/107/200/300" alt="Pelargon">
-            Dekorativ
-            Färgstark
-            Tålig
-            Blommor
-          </header>
+          <!-- Article 3 -->
+          <article class="plant-card">
+            <header>
+              <img class="plant-img" src="https://picsum.photos/id/130/250/180" alt="Pelargon">
+              <img class="plant-icon" src="Assets/images/icon-seedling.svg" alt="Plantera">
+            </header>
 
-          <main>
+            <section class="tags">
+              <p class="tag-decorative">Dekorativ</p>
+              <p class="tag-colorful">Färgstark</p>
+              <p class="tag-robust">Tålig</p>
+              <p class="tag-flower">Blommor</p>
+            </section>
+
             <h3>Pelargon</h3>
             <p>En vacker och lättskött blomma som trivs både inne och ute under sommaren.</p>
-          </main>
 
-          <footer>
-            <img src="Assets/images/12.png" alt="Blomsterkalle avatar">
-            Blomsterkalle
-            2024-12-03
-          </footer>
-        </article>
+            <footer>
+              <img class="avatar-img" src="Assets/images/12.png" alt="Blomsterkalle avatar">
+              <div class="avatar-text">
+                <p><a href="#">Blomsterkalle</a></p>
+                <p>2024-12-03</p>
+              </div>
+            </footer>
+          </article>
 
-        <!-- Article 4 -->
-        <article class="article-4">
-          <header>
-            <img src="https://picsum.photos/id/107/200/300" alt="Basilika">
-            Kryddor
-            Doftande
-            Solälskande
-          </header>
+          <!-- Article 4 -->
+          <article class="plant-card">
+            <header>
+              <img class="plant-img" src="https://picsum.photos/id/130/250/180" alt="Basilika">
+              <img class="plant-icon" src="Assets/images/icon-seedling.svg" alt="Plantera">
+            </header>
 
-          <main>
+            <section class="tags">
+              <p class="tag-air">Kryddor</p>
+              <p class="tag-fragrant">Doftande</p>
+              <p class="tag-sunloving">Solälskande</p>
+            </section>
+
             <h3>Basilika</h3>
             <p>En fantastisk krydda för pastarätter och sallader. Trivs bäst i ett soligt fönster.</p>
-          </main>
 
-          <footer>
-            <img src="Assets/images/88.png" alt="Krydd-Malin avatar">
-            Krydd-Malin
-            2024-12-07
-          </footer>
-        </article>
+            <footer>
+              <img class="avatar-img" src="Assets/images/88.png" alt="Krydd-Malin avatar">
+              <div class="avatar-text">
+                <p><a href="#">Krydd-Malin</a></p>
+                <p>2024-12-07</p>
+              </div>
+            </footer>
+          </article>
 
-        <!-- Article 5 -->
-        <article class="article-5">
-          <header>
-            <img src="https://picsum.photos/id/107/200/300" alt="Sallad">
-            Snabbväxande
-            Ätbart
-            Grönska
-          </header>
+          <!-- Article 5 -->
+          <article class="plant-card">
+            <header>
+              <img class="plant-img" src="https://picsum.photos/id/130/250/180" alt="Sallad">
+              <img class="plant-icon" src="Assets/images/icon-seedling.svg" alt="Plantera">
+            </header>
 
-          <main>
+            <section class="tags">
+              <p class="tag-fast">Snabbväxande</p>
+              <p class="tag-edible">Ätbart</p>
+              <p class="tag-green">Grönska</p>
+            </section>
+
             <h3>Sallad</h3>
             <p>Sallad är en av de enklaste grönsakerna att odla och ger snabba resultat för färska måltider.</p>
-          </main>
 
-          <footer>
-            <img src="Assets/images/11.png" alt="Grönis avatar">
-            Grönis
-            2024-12-06
-          </footer>
-        </article>
+            <footer>
+              <img class="avatar-img" src="Assets/images/11.png" alt="Grönis avatar">
+              <div class="avatar-text">
+                <p><a href="#">Grönis</a></p>
+                <p>2024-12-06</p>
+              </div>
+            </footer>
+          </article>
 
-        <!-- Article 6 -->
-        <article class="article-6">
-          <header>
-            <img src="https://picsum.photos/id/107/200/300" alt="Ormbunke">
-            Luftfuktande
-            Grönska
-            Dekorativ
-          </header>
+          <!-- Article 6 -->
+          <article class="plant-card">
+            <header>
+              <img class="plant-img" src="https://picsum.photos/id/130/250/180" alt="Ormbunke">
+              <img class="plant-icon" src="Assets/images/icon-seedling.svg" alt="Plantera">
+            </header>
 
-          <main>
+            <section class="tags">
+              <p class="tag-air">Luftfuktande</p>
+              <p class="tag-green">Grönska</p>
+              <p class="tag-decorative">Dekorativ</p>
+            </section>
+
             <h3>Ormbunke</h3>
             <p>En klassisk växt som passar perfekt i badrummet eller på skuggiga platser.</p>
-          </main>
 
-          <footer>
-            <img src="Assets/images/100.png" alt="Naturvännen avatar">
-            Naturvännen
-            2024-12-08
-          </footer>
-        </article>
+            <footer>
+              <img class="avatar-img" src="Assets/images/100.png" alt="Naturvännen avatar">
+              <div class="avatar-text">
+                <p><a href="#">Naturvännen</a></p>
+                <p>2024-12-08</p>
+              </div>
+            </footer>
+          </article>
 
-        <!-- Article 7 -->
-        <article class="article-7">
-          <header>
-            <img src="https://picsum.photos/id/107/200/300" alt="Gurka">
-            Blommor
-            Ätbart
-            Grönska
-          </header>
+          <!-- Article 7 -->
+          <article class="plant-card">
+            <header>
+              <img class="plant-img" src="https://picsum.photos/id/130/250/180" alt="Gurka">
+              <img class="plant-icon" src="Assets/images/icon-seedling.svg" alt="Plantera">
+            </header>
 
-          <main>
+            <section class="tags">
+              <p class="tag-flower">Blommor</p>
+              <p class="tag-edible">Ätbart</p>
+              <p class="tag-green">Grönska</p>
+            </section>
+
             <h3>Gurka</h3>
             <p>Gurka växer snabbt, är enkel att odla och ger mängder med gurkor, bara man är noga med vattning, omplantering, duschning och gödsling.</p>
-          </main>
 
-          <footer>
-            <img src="Assets/images/26.png" alt="Coolio avatar">
-            Coolio
-            2024-04-01
-          </footer>
-        </article>
+            <footer>
+              <img class="avatar-img" src="Assets/images/26.png" alt="Coolio avatar">
+              <div class="avatar-text">
+                <p><a href="#">Coolio</a></p>
+                <p>2024-04-01</p>
+              </div>
+            </footer>
+          </article>
 
-        <!-- Article 8 -->
-        <article class="article-8">
-          <header>
-            <img src="https://picsum.photos/id/107/200/300" alt="Tomat">
-            Solälskande
-            Lättodlat
-            Ätbart
-          </header>
+          <!-- Article 8 -->
+          <article class="plant-card">
+            <header>
+              <img class="plant-img" src="https://picsum.photos/id/130/250/180" alt="Tomat">
+              <img class="plant-icon" src="Assets/images/icon-seedling.svg" alt="Plantera">
+            </header>
 
-          <main>
+            <section class="tags">
+              <p class="tag-sunloving">Solälskande</p>
+              <p class="tag-easy">Lättodlat</p>
+              <p class="tag-edible">Ätbart</p>
+            </section>
+
             <h3>Tomat</h3>
             <p>En perfekt grönsak att odla på balkongen eller i trädgården. Ger riklig skörd under sommaren.</p>
-          </main>
 
-          <footer>
-            <img src="Assets/images/82.png" alt="Anna Odlare avatar">
-            Anna Odlare
-            2024-12-05
-          </footer>
-        </article>
+            <footer>
+              <img class="avatar-img" src="Assets/images/82.png" alt="Anna Odlare avatar">
+              <div class="avatar-text">
+                <p><a href="#">Anna Odlare</a></p>
+                <p>2024-12-05</p>
+              </div>
+            </footer>
+          </article>
 
-        <!-- Article 9 -->
-        <article class="article-9">
-          <header>
-            <img src="https://picsum.photos/id/107/200/300" alt="Pelargon">
-            Dekorativ
-            Färgstark
-            Tålig
-            Blommor
-          </header>
+          <!-- Article 9 -->
+          <article class="plant-card">
+            <header>
+              <img class="plant-img" src="https://picsum.photos/id/130/250/180" alt="Pelargon">
+              <img class="plant-icon" src="Assets/images/icon-seedling.svg" alt="Plantera">
+            </header>
 
-          <main>
+            <section class="tags">
+              <p class="tag-decorative">Dekorativ</p>
+              <p class="tag-colorful">Färgstark</p>
+              <p class="tag-robust">Tålig</p>
+              <p class="tag-flower">Blommor</p>
+            </section>
+
             <h3>Pelargon</h3>
             <p>En vacker och lättskött blomma som trivs både inne och ute under sommaren.</p>
-          </main>
 
-          <footer>
-            <img src="Assets/images/12.png" alt="Blomsterkalle avatar">
-            Blomsterkalle
-            2024-12-03
-          </footer>
-        </article>
+            <footer>
+              <img class="avatar-img" src="Assets/images/12.png" alt="Blomsterkalle avatar">
+              <div class="avatar-text">
+                <p><a href="#">Blomsterkalle</a></p>
+                <p>2024-12-03</p>
+              </div>
+            </footer>
+          </article>
 
-        <!-- Article 10 -->
-        <article class="article-10">
-          <header>
-            <img src="https://picsum.photos/id/107/200/300" alt="Basilika">
-            Kryddor
-            Doftande
-            Solälskande
-          </header>
+          <!-- Article 10 -->
+          <article class="plant-card">
+            <header>
+              <img class="plant-img" src="https://picsum.photos/id/130/250/180" alt="Basilika">
+              <img class="plant-icon" src="Assets/images/icon-seedling.svg" alt="Plantera">
+            </header>
 
-          <main>
+            <section class="tags">
+              <p class="tag-air">Kryddor</p>
+              <p class="tag-fragrant">Doftande</p>
+              <p class="tag-sunloving">Solälskande</p>
+            </section>
+
             <h3>Basilika</h3>
             <p>En fantastisk krydda för pastarätter och sallader. Trivs bäst i ett soligt fönster.</p>
-          </main>
 
-          <footer>
-            <img src="Assets/images/88.png" alt="Krydd-Malin avatar">
-            Krydd-Malin
-            2024-12-07
-          </footer>
-        </article>
+            <footer>
+              <img class="avatar-img" src="Assets/images/88.png" alt="Krydd-Malin avatar">
+              <div class="avatar-text">
+                <p><a href="#">Krydd-Malin</a></p>
+                <p>2024-12-07</p>
+              </div>
+            </footer>
+          </article>
 
-        <!-- Article 11 -->
-        <article class="article-11">
-          <header>
-            <img src="https://picsum.photos/id/107/200/300" alt="Sallad">
-            Snabbväxande
-            Ätbart
-            Grönska
-          </header>
+          <!-- Article 11 -->
+          <article class="plant-card">
+            <header>
+              <img class="plant-img" src="https://picsum.photos/id/130/250/180" alt="Sallad">
+              <img class="plant-icon" src="Assets/images/icon-seedling.svg" alt="Plantera">
+            </header>
 
-          <main>
+            <section class="tags">
+              <p class="tag-fast">Snabbväxande</p>
+              <p class="tag-edible">Ätbart</p>
+              <p class="tag-green">Grönska</p>
+            </section>
+
             <h3>Sallad</h3>
             <p>Sallad är en av de enklaste grönsakerna att odla och ger snabba resultat för färska måltider.</p>
-          </main>
 
-          <footer>
-            <img src="Assets/images/11.png" alt="Grönis avatar">
-            Grönis
-            2024-12-06
-          </footer>
-        </article>
+            <footer>
+              <img class="avatar-img" src="Assets/images/11.png" alt="Grönis avatar">
+              <div class="avatar-text">
+                <p><a href="#">Grönis</a></p>
+                <p>2024-12-06</p>
+              </div>
+            </footer>
+          </article>
 
-        <!-- Article 12 -->
-        <article class="article-12">
-          <header>
-            <img src="https://picsum.photos/id/107/200/300" alt="Ormbunke">
-            Luftfuktande
-            Grönska
-            Dekorativ
-          </header>
+          <!-- Article 12 -->
+          <article class="plant-card">
+            <header>
+              <img class="plant-img" src="https://picsum.photos/id/130/250/180" alt="Ormbunke">
+              <img class="plant-icon" src="Assets/images/icon-seedling.svg" alt="Plantera">
+            </header>
 
-          <main>
+            <section class="tags">
+              <p class="tag-air">Luftfuktande</p>
+              <p class="tag-green">Grönska</p>
+              <p class="tag-decorative">Dekorativ</p>
+            </section>
+
             <h3>Ormbunke</h3>
             <p>En klassisk växt som passar perfekt i badrummet eller på skuggiga platser.</p>
-          </main>
 
-          <footer>
-            <img src="Assets/images/100.png" alt="Naturvännen avatar">
-            Naturvännen
-            2024-12-08
-          </footer>
-        </article>
+            <footer>
+              <img class="avatar-img" src="Assets/images/100.png" alt="Naturvännen avatar">
+              <div class="avatar-text">
+                <p><a href="#">Naturvännen</a></p>
+                <p>2024-12-08</p>
+              </div>
+            </footer>
+          </article>
+        </div>
       </section>
 
-      <section>
-        <h2>Våra tidigare odlingar</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ratione quia eos pariatur deserunt veritatis. Tenetur, ipsum! Iusto delectus ipsam esse pariatur rerum eveniet nostrum, dolor distinctio nam quaerat doloribus?</p>
-        <button type="button">Planterade plantor</button>
+      <!-- Fourth section -->
+      <section class="section-4 max-width-container section-bg">
+        <div class="section-flex max-width">
+          <div class="icon-bg">
+            <img src="Assets/images/icon-seedling.svg" alt="Plantera">
+          </div>
+          <div class="section-info">
+            <h2>Våra tidigare odlingar</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ratione quia eos pariatur deserunt veritatis. Tenetur, ipsum! Iusto delectus ipsam esse pariatur rerum eveniet nostrum, dolor distinctio nam quaerat doloribus?</p>
+            <button type="button">Planterade plantor</button>
+          </div>
+        </div>
       </section>
     </main>
 
     <!-- Footer -->
     <footer>
-      <section>
-        <img src="Assets/images/logo.svg" alt="Planned Planthood Logo" />
-        Planned Planthood
+      <section class="footer max-width-container">
+        <div class="footer-flex max-width">
+          <section class="footer-info">
+            <section class="logo">
+              <svg class="logo-white" width="214" height="210" viewBox="0 0 214 210" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none">
+                  <path d="M116.833 193.533C117.406 192.909 117.969 192.279 118.522 191.645L168.173 160.226C206.289 136.107 217.36 86.0907 192.816 48.5247C189.153 42.9185 181.619 41.3343 175.976 44.905L125.764 76.6782C121.37 70.1605 116.086 64.0725 109.92 58.5872L52.4904 7.49831C46.8526 2.48295 38.1677 2.90777 33.061 8.46735C-2.89261 47.6094 0.211903 108.041 39.9737 143.413L97.4031 194.502C103.041 199.517 111.726 199.092 116.833 193.533Z" />
+                  <path d="M115.122 194.336C115.527 193.897 115.927 193.455 116.319 193.009L153.69 169.521C182.93 151.143 191.451 112.997 172.598 84.3362C169.529 79.6722 163.25 78.3762 158.555 81.3272L121.425 104.664C118.17 100 114.303 95.6362 109.83 91.6843L66.4654 53.3677C61.8146 49.2582 54.6598 49.6021 50.4409 54.1641C22.9065 83.9378 25.2893 129.917 55.732 156.816L99.097 195.132C103.748 199.242 110.903 198.898 115.122 194.336Z" />
+                </g>
+              </svg>
+              <div class="logo-text">
+                <p>Planned</p>
+                <p>Planthood</p>
+              </div>
+            </section>
 
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, veniam ducimus aut sint atque ullam alias perspiciatis fuga. Consequuntur nesciunt ea corrupti aperiam fugit inventore ratione earum. Iure, eius molestias?</p>
-        <a href="tel:+46201234567">Telefon: 020-1234567</a>
-        <a href="mailto:info@plannedplant.com">info@plannedplant.com</a>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, veniam ducimus aut sint atque ullam alias perspiciatis fuga. Consequuntur nesciunt ea corrupti aperiam fugit inventore ratione earum. Iure, eius molestias?</p>
+            
+            <div class="contact">
+              <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fill-rule="evenodd">
+                  <path d="M-3-3h24v24H-3z"/>
+                  <path d="M17 12.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.3-1.1-.5-2.3-.5-3.5 0-.6-.4-1-1-1H1C.4 0 0 .4 0 1c0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1zM16 9h2c0-5-4-9-9-9v2c3.9 0 7 3.1 7 7zm-4 0h2c0-2.8-2.2-5-5-5v2c1.7 0 3 1.3 3 3z" fill="#FFF"/>
+                </g>
+              </svg>
+              <a href="tel:+46201234567">Telefon: 020-1234567</a>
+            </div>
+
+            <div class="contact">
+              <svg width="20" height="16" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fill-rule="evenodd">
+                  <path d="M-2-4h24v24H-2z"/>
+                  <path d="M18 0H2C.9 0 0 .9 0 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zm0 14h-2V5.2L10 9 4 5.2V14H2V2h1.2L10 6.2 16.8 2H18v12z" fill="#FFF"/>
+                </g>
+              </svg>
+              <a href="mailto:info@plannedplant.com">info@plannedplant.com</a>
+            </div>
+          </section>
+
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="#">Hem</a></li>
+              <li><a href="#">Historik</a></li>
+              <li><a href="#">Tips</a></li>
+              <li><a href="#">Kontakt</a></li>
+            </ul>
+          </nav>
+        </div>
       </section>
-
-      <nav>
-        <ul>
-          <li><a href="#">Hem</a></li>
-          <li><a href="#">Historik</a></li>
-          <li><a href="#">Tips</a></li>
-          <li><a href="#">Kontakt</a></li>
-        </ul>
-      </nav>
     </footer>
   </body>
 </html>
