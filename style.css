@@ -429,10 +429,13 @@ button {
     p {
       padding: 0.5em 1em;
       border-radius: 2em;
-      color: var(--clr-primary-light-1);
       font-size: var(--fs-100);
       font-weight: var(--fw-700);
       text-transform: uppercase;
+
+      a {
+        color: var(--clr-primary-light-1);
+      }
 
       &.tag-air {
         background-color: var(--clr-air);
