@@ -339,7 +339,7 @@ main {
     grid-column: span 3;
   }
 
-  @media (width >= 425px) {
+  @media (width >= 480px) {
     .gallery-img {
       grid-column: span 2;
     }
