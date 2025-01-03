@@ -351,8 +351,12 @@ form {
   fieldset {
     border: none;
 
+    legend {
+      margin-bottom: 0.5em;
+    }
+
     .form-flex {
-      margin-top: 1em;
+      margin-top: 0.5em;
       padding: 0.1em;
       display: flex;
       border: 1px solid var(--clr-primary-dark);
